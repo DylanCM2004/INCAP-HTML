@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 s3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Satisfy&display=swap')
+        .responsive{
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            background-image: url(img/foto9.jpg); 
+            background-repeat: no-repeat; 
+            background-size: contain; 
+            background-attachment: fixed;
+        }
+        .responsive:hover{
+            transform: scale(1.2); /* para aumentar el tamaño de la imagen cuando se pase por encima con el mouse */
+            filter:grayscale(100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- crear ancaje interno  -->
+    <a id="INICIO"></a> <br>
+    <!-- Titulo en marquesina -->
+    <marquee behavior="continue" direction="right" style="font-size: 50px; background-color: blue;">WEB CON HIPERVINCULOS Y VIDEOS</marquee>
+    <br><br>
+
+    <!--  seccion de hipervintulos -->
+    <h1>seccion de hipervintulos</h1>
+    <br>
+    <center>
+        <a href="http://www.youtube.com" target="_blank">YOUTUBE</a>
+        <br><br>
+        <a href="http://www.eltiempo.com" target="_blank">El tiempo</a>
+        <br><br>
+        <a href="http://www.unigermana.edu.co" target="_blank">unigermana</a>
+        <br><br>
+        <a href="http://www.as.com" target="_blank">AS</a>
+        <br><br>
+    </center>
+
+    <!-- Redes sociales -->
+    <h2>SECCION DE REDES SOCIALES</h2>
+    <center>
+        <img class="responsive" src="img/twitter.png" alt="" height="90"width="100">
+    
+        <img class="responsive" src="img/face.png" alt="" height="90" width="100">
+
+        <img class="responsive" src="img/instagram.png" alt="" height="90" width="100">
+        
+        <img class="responsive" src="img/whatsapp.png" alt="" height="90" width="100">
+        <br><br><br><br>
+        <hr>
+        <hr>
+    </center>
+
+    <!-- SECCION DE VIDEO ENBEBIDO -->
+    <h2>SECCION DE VIDEO ENBEBIDO</h2>
+    <br>
+    <center>
+        <!-- Se toma de internet directamente en la parte de compartir e incorporar -->
+        <iframe class="responsive" width="560" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+    <br></br>
+    <hr>
+    <hr>
+
+    <!-- seccion textos de programas web -->
+    <h2>seccion textos de programas web</h2>
+    <br>
+    <center>
+        <img class="responsive" src="img/HTML5.png" alt="" height="100" width="100">
+        <img class="responsive" src="img/css3.png" alt="" width="100" height="100">
+        <p>Esta materia de HTML es muy importante conocerla por la continua estructuración de las páginas web</p>
+        <br>
+        <p>CSS es su complemento para colocar estilos básicos y avanzados</p></center>
+        <br><br>
+        <hr>
+        <hr>
+    </center>
+    <!-- SECCION DE ENLACE INTERNO -->
+    <H2>SECCION DE ENLACE INTERNO </H2>
+    <a class="responsive" href="#INICIO"><img src="img/inicio.png" alt="INICIO" height="80" width="70" ></a>
+    <br><br>
+    <cite>Por @Dylan martinez</cite>
+</body>
+</html>
