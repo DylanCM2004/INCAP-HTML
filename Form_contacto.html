@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO HTML</title>
+    <link rel="stylesheet" href="../Css/contacto.css">
+</head>
+<body>
+    <!-- PARA LOS DATOS QUE ESTAN EN LA CABECERA DE LA PAGINA WEB -->
+    <header>
+        <img src="../IMG/incap.png" height="100" width="100" alt="">
+        <h1>FORMULARIOS Y LISTAS</h1>
+    </header>
+    <!-- ES LA BARRA DE NAVEGACION Y CONTIENE IMAGENES Y DEMAS-->
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>PRODUCTOS</li>
+            <li>SERVICIOS</li>
+            <li>CONTACTO</li>
+        </ul>
+    </nav>
+    <section>
+        <form action="datos.php" method="post">
+            <!-- seccion para ingrso del nombre completo -->
+        <label for="">Nombre completo:</label>
+        <input type="text" name="nombre" placeholder="ingrese su nombre" required>
+        <br><br> <hr>
+        <!-- seccion para ingrso del e mail  -->
+        <label for=""> E mail:</label>
+        <input type="email" name="email" placeholder="ingrese su Correo electronico" required> 
+        <br><br><hr>
+        <!-- seccion para ingrso de contraseña  -->
+        <label for=""> Contraseña</label>
+        <input type="contraseña" name="contraseña" placeholder="ingrese su Contraaseña" required> 
+        <br><br><hr>
+        <!-- seccion de hobbies  -->
+        <label for=""> Seleccionar tus hobbbies </label>
+        <br>
+        <input type="checkbox">Cine
+        <br>
+        <input type="checkbox">Lectura
+        <br>
+        <input type="checkbox">Deporte
+        <br><br><hr>
+        <!-- seccion de estado civil  -->
+        <label for=""> Estado civil </label>
+        <br>
+        <input type="radio" name="estado civil"> Casado (a)
+        <br>
+        <input type="radio" name="estado civil"> Soltero (a)
+        <br>
+        <input type="radio" name="estado civil"> Vuido (a)
+        <br>
+        <input type="radio" name="estado civil"> Casi algo
+        <br><br><hr>
+        <!-- seccion de programa tecnicos  -->
+        <label for=""> Estado civil </label>
+        <select name="" id="">
+            <option value="">Seleccionar programas</option>
+            <option value="">Sistemas</option>
+            <option value="">Diseño grafico</option>
+            <option value="">Contabilidad</option>
+        </select>
+        <br><br> <hr>
+        <!-- seccion de comentarios  -->
+        <label for="">Comentarios: </label>
+        <textarea name="" id="" cols="40" rows="5"></textarea>
+        <br><br>
+        <!-- seccion de botones para le formulario -->
+        <button type="submit">Enviar</button>
+        <button type="reset"> Cancelar</button>
+        </form>
+    </section>
+    <!-- Seccion de pie de pagina -->
+    <footer>
+        <p>Derechos reservados: &COPY; 2023&#64 Dylan </p>
+    </footer>
+</body>
+</html>
