@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    max-height: 100%; /* para que las imagenes se adapten a la altura de cualquier dispositivo*/
+}
+body{
+    font-size: 18px;
+    font-family: Tahoma;
+    background-image:url(../img/descarga.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* Seccion maquetacion CSS HEADER */
+#header{
+    background-color: antiquewhite;
+    border: 2px solid blue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row; /*posicionamiento horizontal*/
+    justify-content: center; /*Centrar horizontalmente*/
+    align-items: center; /*contrar verticalmente*/
+    grid-area: header; /*nombre asignado al contenedor HEADER para CSS GRID*/
+}
+/*seccion maquetacion css nav*/
+ul{
+    padding: 0;
+    margin: 0 1px;
+}
+li{
+    display: inline; /*una lina horizontal*/
+    list-style: none; /* quita las viñetas que hace la lista*/
+    margin: 0 5px;
+    font: bold 12px Verdana;
+}
+a{
+    color: azure;
+    text-decoration: none; /*Qita el subrayado de los hipervinculos*/
+}
+/* Seccion de barra de navegacion */
+#menu{
+    grid-area: nav; /* nombre asignado al contenedor NAV PARA CSS GRIP*/
+    background-color: blue;
+    border: 2px solid yellowgreen;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* colocar los elementos del contenedor a todo*/
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+/* estilos de buscador web */
+.buscador input{
+    height: 25px;
+    width: 0;
+    padding: 0;
+    border-radius: 40px;
+    border: 0;
+    padding-right: 50px;
+    transition: 0.8s ease;/* para aplicar una animacion en demora(ease)*/
+}
+.buscador input:hover{
+    width: 150px;
+    padding-left: 10px;
+    outline: none;
+    /* este evento sucede cuando se pasa el mouse por encima del campo */
+}
+/* seccion de maquetacion css section */
+#main{
+    grid-area: main;/* nombre asignado al contenedor para css grid*/
+    background-color: rgba(225, 225, 225, 0.6);
+    backdrop-filter: blur(5px);
+    border: 2px solid green;
+    max-width: 100%;
+    height: auto;
+    backdrop-filter: blur(5px);
+}
+figure, figcaption{
+    display: inline;
+    margin: 45px;
+    padding: 5px;
+}
+.programa{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 15px 15px;
+}
+#sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column; /*colocar elementos en forma de columnas*/
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225, 225, 225, 0.6);
+    backdrop-filter: blur(5px);
+}
+iframe{
+    max-width: 100%; /* esta*/
+    height: auto; /* y estan son apra que los videos enbebidos, se adapten a todos los estilos de pantalla, ya sea celular, tablet, o computador*/
+}
+#footer{
+    grid-area: footer; /* siempre se pone cada que se coloc una etiqueta con # para hacer referencia a cual se habla para colocarles estilos*/
+    padding-top: 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    clear: both; /* elimina los float de los elementos*/
+    background-color: rgba(225, 225, 225, 0.6);
+    backdrop-filter: blur(5px);
+}
+/* Seccion de erdes sociales */
+#redes{
+    padding: 0;
+    margin: 0;
+}
+#redes a i:hover{
+    transform: scale(1.5);/* animacion para agrandar iconos de redes sociales*/
+}
+/* Seccion de estilo para iconos fontawesome */
+i[class^="fa"]{
+    color: grey;
+    font-size: 18px;
+    /* Busca todas las etiquetas <i> que su clase comience por fa */
+}
+i[class^="fab"]{
+    color: grey;
+    font-size: 30px;
+    border: 1px solid transparent;
+    margin: 0;
+    /* Busca todas las etiquetas <i> que su clase comience por fab */
+}
+/*  Seccion estilos icono almuerzo-burguesa */
+.fa-bars{
+    font-size: 30px !important;
+    color:black !important;
+}
+.openmenu{
+    display: none; /*Es para ocultar elementos*/
+    cursor: pointer; /* para colocar una manito en el cursos*/
+    font-size: 24px;
+}
+/* Seccion de definicion de plantillas con CSS DRID */
+/* VISTAS PC- 3 COLUMNAS */
+#grid-container>*{
+    text-align: center;
+    box-shadow: 1px 1px 0px rgba(0,0,0,0.75);
+}
+#grid-container{
+    display: grid;/* es para manejar contenedores como estilos de rejillas*/
+    grid-gap: 10px;
+    grid-template:
+    "header header header" 150px
+    "nav nav nav" 50px
+    "main main sidebar" 300px
+    "main main sidebar" 300px
+    "main main sidebar" 250px
+    "footer footer footer" 150px 
+    1000px 150px 300px;
+}
